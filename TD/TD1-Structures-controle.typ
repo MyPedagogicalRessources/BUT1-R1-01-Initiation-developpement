@@ -157,9 +157,53 @@ On suppose que l’utilisateur peut se tromper lorsqu’il communique son code. 
 
 === 4.1. Écrire un algorithme qui demande à l’utilisateur de saisir son code  autant de fois que nécessaire de saisir son code jusqu’à ce qu’il soit correct.
 
+#correction(displayCorrection: isCorrection)[
+  #pseudocode-list(booktabs:true, title: smallcaps[Algorithme 4.1 : Identification de l'utilisateur])[
+  + *Données* 
+  + Le code de la carte bancaire de type Entier
+  + Le code saisi par l'utilisateur de type Entier
+  + *Début*
+  + Lire le code de la carte bancaire ;
+  + Écrire "Quel est votre code ?" ;
+  + Lire le code saisi par l'utilisateur ;
+  + *tant que* le code saisi est différent du code de la carte bancaire *faire*
+    + Écrire "Quel est votre code ?" ;
+    + Lire le code saisi par l'utilisateur ;
+  + *fin tant que* 
+  + Afficher "Le code est correct." ;
+  + *Fin*
+  ]
+]
+
 === 4.2. Modifier l’algorithme précédent pour limiter le nombre d’essais maximum (par exemple 3).
 
-En considérant que les informations du distributeur sont stockées dans les trois registres :
+#correction(displayCorrection: isCorrection)[
+  #pseudocode-list(booktabs:true, title: smallcaps[Algorithme 4.2 : Identification de l'utilisateur avec un nombre d'essais maximum])[
+  + *Données* 
+  + Le code de la carte bancaire de type Entier
+  + Le code saisi par l'utilisateur de type Entier
+  + Le nombre d'essais de type Entier
+  + *Début*
+  + Lire le code de la carte bancaire ;
+  + Initialiser le nombre d'essais à 3 ;
+  + Écrire "Quel est votre code ?" ;
+  + Lire le code saisi par l'utilisateur ;
+  + *tant que* le code saisi est différent du code de la carte bancaire et le nombre d'essais $>$ 0 *faire*
+    + Écrire "Quel est votre code ?" ;
+    + Lire le code saisi par l'utilisateur ;
+    + Décrémenter le nombre d'essais de 1 ;
+  + *fin tant que* 
+  + *si* le code saisi est égal au code de la carte *alors*
+    + Écrire "Le code est correct." ;
+  + *sinon*
+    + Écrire "Le code est erroné." ;
+  + *fin si*
+  + *Fin*
+  ]
+]
+
+=== 4.3. Traduire les algorithmes précédents dans le langage du distributeur automatique de billets
+en considérant que les informations du distributeur sont stockées dans les trois registres :
 
 - « _codeCarte_ » : stocke la valeur du code réel (correct) de la carte bancaire déjà connue par le distributeur avant le traitement demandé.
 - « _codeSaisi_ » : permet de stocker la valeur du code saisi par l’utilisateur.
@@ -183,6 +227,36 @@ Les actions élémentaires du distributeur sont :
 
 On suppose que le distributeur est capable de comparer soit les valeurs de 2 registres, soit la valeur d’un registre avec une constante et ce à l’aide des opérateurs $>$, $>=$, $<$, $<=$, $=$.
 
-== Pour aller plus loin
+#correction(displayCorrection: isCorrection)[
 
-Traduire les algorithmes précédents en langage ADA.
+  #pseudocode-list(booktabs:true, title: smallcaps[Programme 4.1 : Identification de l'utilisateur])[
+  + *Début*
+  + _lireCode_ ;
+  + _demanderCode_ ;
+  + *tant que* _codeSaisi_ $!=$ _codeCarte_ *faire*
+    + _demanderCode_ ;
+    + _lireCode_ ;
+  + *fin tant que*
+  + _afficherCodeCorrect_ ;
+  + *Fin*
+  ]
+
+  #pseudocode-list(booktabs:true, title: smallcaps[Programme 4.2 : Identification de l'utilisateur avec un nombre d'essais maximum])[
+  + *Début*
+  + _lireCode_ ;
+  + _initialiserNbEssais_ ;
+  + _demanderCode_ ;
+  + _lireCode_ ;
+  + *tant que* _codeSaisi_ $!=$ _codeCarte_ et _nbEssais_ $>$ 0 *faire*
+    + _demanderCode_ ;
+    + _lireCode_ ;
+    + _decrementerNbEssais_ ;
+  + *fin tant que* 
+  + *si* _codeSaisi_ $=$ _codeCarte_ *alors*
+    + _afficherCodeCorrect_ ;
+  + *sinon*
+    + _afficherCodeErrone_ ;
+  + *fin si*
+  + *Fin*
+  ]
+]
