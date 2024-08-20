@@ -13,4 +13,5 @@
   listing-index: (enabled: false)
 )
 
-#include "TD1-Structures-controle.typ"
+#import "TD1-Structures-controle.typ":*
+#td1(isCorrection: true)

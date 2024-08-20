@@ -35,7 +35,8 @@ Une société de location de voitures propose à ses clients le contrat suivant 
 
 #set enum(numbering: "a)")
 
-=== 1.1. Que va afficher cet algorithme si :
+1.1. Que va afficher cet algorithme si
+
   + $X = 30$ ?
   + $X = 110$ ?
   + $X = 100$ ?
@@ -54,7 +55,7 @@ Une société de location de voitures propose à ses clients le contrat suivant 
 ]
 ]
 
-=== 1.2. Quelles sont les pré/post-conditions à respecter dans cet algorithme ?
+1.2. Quelles sont les pré/post-conditions à respecter dans cet algorithme ?
 
 #correction(displayCorrection: isCorrection)[
   - Pré-conditions : 
@@ -70,7 +71,8 @@ Une société de location de voitures propose à ses clients le contrat suivant 
   ]
 ]
 
-=== 2.1. Ecrire un algorithme qui demande un nombre de départ, et qui ensuite affiche les dix nombres suivants. 
+2.1. Ecrire un algorithme qui demande un nombre de départ, et qui ensuite affiche les dix nombres suivants.
+
 Par exemple, si l’utilisateur entre le nombre 17, le programme affichera les nombres de 18 à 27. Nous considérons que les actions élémentaires de
 lecture, affichage, comparaison, stockage, addition de valeurs existent.
 
@@ -92,7 +94,7 @@ lecture, affichage, comparaison, stockage, addition de valeurs existent.
   ]
 ]
 
-=== 2.2. Quelles sont les informations en entrée et en sortie de l'algorithme ? Quels sont les types de données ?
+2.2. Quelles sont les informations en entrée et en sortie de l'algorithme ? Quels sont les types de données ?
 
 #correction(displayCorrection: isCorrection)[
   - Informations en entrée : 
@@ -103,7 +105,7 @@ lecture, affichage, comparaison, stockage, addition de valeurs existent.
     - Entier.
 ]
 
-=== 2.3. Indiquez l'initialisation, la progression et la condition d'arrêt dans la structure itérative de l'algorithme.
+2.3. Indiquez l'initialisation, la progression et la condition d'arrêt dans la structure itérative de l'algorithme.
 
 #correction(displayCorrection: isCorrection)[
   - Initialisation : 
@@ -155,7 +157,7 @@ Indiquez l’initialisation, la progression et la condition d’arrêt dans la s
 Nous aimerions écrire un algorithme qui sera utilisé par un distributeur automatique de billets afin d’identifier leurs utilisateurs. Un utilisateur est bien identifié s’il tape un code sur le distributeur égal au code qui est sur sa carte bancaire.
 On suppose que l’utilisateur peut se tromper lorsqu’il communique son code. Dans la suite, nous supposons que la valeur du code de la carte bancaire est connue par le distributeur.
 
-=== 4.1. Écrire un algorithme qui demande à l’utilisateur de saisir son code  autant de fois que nécessaire de saisir son code jusqu’à ce qu’il soit correct.
+4.1. Écrire un algorithme qui demande à l’utilisateur de saisir son code  autant de fois que nécessaire de saisir son code jusqu’à ce qu’il soit correct.
 
 #correction(displayCorrection: isCorrection)[
   #pseudocode-list(booktabs:true, title: smallcaps[Algorithme 4.1 : Identification de l'utilisateur])[
@@ -175,7 +177,7 @@ On suppose que l’utilisateur peut se tromper lorsqu’il communique son code. 
   ]
 ]
 
-=== 4.2. Modifier l’algorithme précédent pour limiter le nombre d’essais maximum (par exemple 3).
+4.2. Modifier l’algorithme précédent pour limiter le nombre d’essais maximum (par exemple 3).
 
 #correction(displayCorrection: isCorrection)[
   #pseudocode-list(booktabs:true, title: smallcaps[Algorithme 4.2 : Identification de l'utilisateur avec un nombre d'essais maximum])[
@@ -202,7 +204,7 @@ On suppose que l’utilisateur peut se tromper lorsqu’il communique son code. 
   ]
 ]
 
-=== 4.3. Traduire les algorithmes précédents dans le langage du distributeur automatique de billets
+4.3. Traduire les algorithmes précédents dans le langage du distributeur automatique de billets
 en considérant que les informations du distributeur sont stockées dans les trois registres :
 
 - « _codeCarte_ » : stocke la valeur du code réel (correct) de la carte bancaire déjà connue par le distributeur avant le traitement demandé.

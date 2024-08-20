@@ -13,7 +13,7 @@
     rect(
     fill: luma(250),
     [
-      === Correction 
+      *Correction* 
       #body
     ],
   )
