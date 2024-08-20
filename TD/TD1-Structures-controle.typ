@@ -80,7 +80,7 @@ lecture, affichage, comparaison, stockage, addition de valeurs existent.
   + La valeur saisie de type Entier
   + le compteur de type Entier
   + *Début*
-  + Écrire "Saisir une valeur :";
+  + Écrire "Saisir une valeur :" ;
   + Lire la valeur saisie ;
   + Écrire "Les 10 nombres suivants sont :" ;
   + Initialiser le compteur à 1 ;
@@ -92,15 +92,63 @@ lecture, affichage, comparaison, stockage, addition de valeurs existent.
   ]
 ]
 
-=== 2.2. Quelles sont les information en entrée et en sortie de l'algorithme ? Quels sont les types de données ?
+=== 2.2. Quelles sont les informations en entrée et en sortie de l'algorithme ? Quels sont les types de données ?
+
+#correction(displayCorrection: isCorrection)[
+  - Informations en entrée : 
+    - La valeur saisie de type Entier.
+  - Informations en sortie : 
+    - Les 10 nombres suivants de la valeur saisie.
+  - Types de données : 
+    - Entier.
+]
 
 === 2.3. Indiquez l'initialisation, la progression et la condition d'arrêt dans la structure itérative de l'algorithme.
+
+#correction(displayCorrection: isCorrection)[
+  - Initialisation : 
+    - Initialiser le compteur à 1.
+  - Progression : 
+    - Incrémenter le compteur de 1.
+  - Condition d'arrêt : 
+    - La valeur du compteur est inférieure ou égale à 10.
+]
 
 == Exercice 3
 
 Écrire un algorithme qui demande un nombre compris entre 10 et 20, jusqu'à ce que la réponse convienne. En cas de réponse supérieure à 20, on fera apparaître un message : « Plus petit ! », et inversement, « Plus grand ! » si le nombre est inférieur à 10.
 
 Indiquez l’initialisation, la progression et la condition d’arrêt dans la structure itérative de l’algorithme. 
+
+#correction(displayCorrection: isCorrection)[
+  #remarque[ndiquez que nous avons besoin d’une premiere lecture (avant la boucle) afin d’évaluer la condition une première fois]
+
+  #pseudocode-list(booktabs:true, title: smallcaps[Algorithme 3 : Demande d'un nombre compris entre 10 et 20])[
+  + *Données* 
+  + La valeur saisie de type Entier
+  + *Début*
+  + Écrire "Saisir un nombre entre 10 et 20 :" ;
+  + Lire la valeur saisie ;
+  + *tant que* _la valeur saisie $<$ 10 ou la valeur saisie $>$ 20_ *faire*
+    + *si* _la valeur saisie est inférieure à 10_ *alors*
+      + Écrire "Plus grand !" ;
+    + *sinon*
+      + Écrire "Plus petit !" ;
+    + *fin si*
+    + Écrire "Saisir un nombre entre 10 et 20 :";
+    + Lire la valeur saisie ;
+  + *fin tant que*
+  + Écrire "Le nombre est correct." ;
+  + *Fin*
+  ]
+
+  - Initialisation : 
+    - Lire la valeur saisie.
+  - Progression : 
+    - Lire la valeur saisie.
+  - Condition d'arrêt :
+    - La valeur saisie est comprise entre 10 et 20.
+]
 
 == Exercice 4
 
