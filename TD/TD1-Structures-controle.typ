@@ -1,11 +1,11 @@
+#let td1(isCorrection: true) = [
+
 #import "@preview/lovelace:0.3.0": *
 #import "TD_Commons.typ": *
 
 #set heading(numbering: none)
 
-#let isCorrection = true
-
-= TD1 - Les structures de contrôle
+= R101- TD1 - Les structures de contrôle
 
 == Objectifs
 
@@ -259,4 +259,6 @@ On suppose que le distributeur est capable de comparer soit les valeurs de 2 reg
   + *fin si*
   + *Fin*
   ]
+]
+
 ]
