@@ -89,7 +89,11 @@ Au baccalauréat, la mention associée à une note sur 20 est
 - "insuffisant" pour les notes strictement inférieures à 10.
 
 1.	Écrire un programme en Ada permettant la saisie d’une note. 
-2. Compléter le programme précèdent pour afficher la mention correspondante à la note saisie par l’utilisateur. Vous devez utiliser *seulement* la structure de sélection :
+
+#pagebreak()
+
+2. Compléter le programme précèdent pour afficher la mention correspondante à la note saisie par l’utilisateur. 
+Vous devez utiliser *seulement* la structure de sélection :
 
 #figure(
   image("figures/Fig3_TP1.png", width: 40mm)
