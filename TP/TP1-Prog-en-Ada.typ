@@ -45,8 +45,8 @@ Avant de rentrer dans le vif de la programmation Ada, mettre en oeuvre un progra
 ```
 
 9. S’il y a des erreurs, vérifier le contenu de votre fichier et reprenez à 2.
-+ Lorsqu’aucune erreur n’est pas signalée, observez le contenu du répertoire contenant “hello.adb”. Que constatez-vous ?
-+ Exécuter le programme généré en tapant son nom et valider. Si tout fonctionne vous devriez obtenir un joli message sur la console :)
++ Lorsqu’aucune erreur n’est signalée, observez le contenu du répertoire contenant “hello.adb”. Que constatez-vous ?
++ Exécuter le programme généré en tapant son nom et valider. Si tout fonctionne vous devriez obtenir un joli message sur la console.
 + Modifier le code du fichier “hello.adb” de façon à ce que le message obtenu affiche, sur une deuxième ligne de la console, vos nom et prénom. Reprendre la commande vue à la question 8 puis exécuter le programme.
 
 == Exercice 2
