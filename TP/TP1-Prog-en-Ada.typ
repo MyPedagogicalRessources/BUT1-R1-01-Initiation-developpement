@@ -78,3 +78,21 @@ Dans ce deuxième exercice, nous allons nous concentrer sur la traduction de la 
 ]
 
 2. Compilez et exécutez le programme obtenu.
+
+== Exercice 3
+
+Au baccalauréat, la mention associée à une note sur 20 est
+- "très bien" pour les notes supérieures ou égales à 16, 
+- "bien" pour les notes comprises entre 14 inclus et 16 exclu, 
+- "assez bien" pour les notes comprises entre 12 inclus et 14 exclu, 
+- "passable" pour les notes comprises entre 10 inclus et 12 exclu et 
+- "insuffisant" pour les notes strictement inférieures à 10.
+
+1.	Écrire un programme en Ada permettant la saisie d’une note. 
+2. Compléter le programme précèdent pour afficher la mention correspondante à la note saisie par l’utilisateur. Vous devez utiliser *seulement* la structure de sélection :
+
+#figure(
+  image("figures/Fig3_TP1.png", width: 40mm)
+)
+
+3. Pour s'assurer du bon fonctionnement, tester le programme pour différentes valeurs de la note saisie. Quels sont les différents cas à considérer ?
