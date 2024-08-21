@@ -49,4 +49,32 @@ Avant de rentrer dans le vif de la programmation Ada, mettre en oeuvre un progra
 + Exécuter le programme généré en tapant son nom et valider. Si tout fonctionne vous devriez obtenir un joli message sur la console :)
 + Modifier le code du fichier “hello.adb” de façon à ce que le message obtenu affiche, sur une deuxième ligne de la console, vos nom et prénom. Reprendre la commande vue à la question 8 puis exécuter le programme.
 
-Nous allons maintenant passer à un programme un peu plus complet
+== Exercice 2
+
+Dans ce deuxième exercice, nous allons nous concentrer sur la traduction de la structure de sélection "SI- SINON".
+
+#figure(
+  image("figures/Fig2_TP1.png", width: 65mm)
+)
+
+1. Traduisez l’algorithme concret du calcul de tarifs décrit ci-dessous dans le langage Ada.
+
+#pseudocode-list(booktabs:true, title: smallcaps[Algorithme 1 : Calcul de tarifs])[
++ Afficher un message pour demander le nombre de calendriers à imprimer ;
++ Lire la valeur souhaitée ;
++ #comment[Trouver le tarif qui va être appliqué et calculer le prix d'impression] 
++ *si* le nombre de calendriers à imprimer $<$ 75 alors
+  + #comment[Appliquer le tarif à 1€]
+  + Stocker dans le prix total le nombre de calendriers ;
++ *sinon*
+  + #comment[Appliquer le tarif avec réduction de 10€]
+  + Stocker dans le prix total le résultat de l’opération le nombre de calendriers $-$ 10€ ;
+  + Ajouter le forfait de 3 e au calcul précédent ;
++ *fin si*
++ #comment[Mise à jour du prix]
++ Ajouter 4€ de frais de transport ;
++ Afficher le prix total à payer ; 
++ *Fin*
+]
+
+2. Compilez et exécutez le programme obtenu.

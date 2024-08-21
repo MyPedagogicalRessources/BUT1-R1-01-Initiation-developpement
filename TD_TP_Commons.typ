@@ -19,3 +19,8 @@
   )
   }
 }
+
+#let comment(body, prefix: "--") = {
+  set text(green)
+  [_ #prefix #body _]
+}
