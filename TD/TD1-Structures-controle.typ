@@ -1,7 +1,7 @@
 #let td1(isCorrection: true) = [
 
 #import "@preview/lovelace:0.3.0": *
-#import "TD_Commons.typ": *
+#import "../TD_TP_Commons.typ": *
 
 #set heading(numbering: none)
 
