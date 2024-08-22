@@ -6,9 +6,9 @@
 = R101- TP1 - Programmation en Ada
 
 #remarque(title: [*Avant de commencer chaque séance TP*])[
-  + Ouvrir un terminal et créer un dossier dans votre espace (disque H).
-  + Se placer dans le dossier et créer un dossier TP\<_num. du TP_\>.
-  + Travailler dans le dossier TP\<_num. du TP_\>.
+  + Ouvrez un terminal et créez un dossier dans votre espace (disque H).
+  + Placez vous dans le dossier et créez un dossier TP\<_num. du TP_\>.
+  + Travaillez dans le dossier TP\<_num. du TP_\>.
   + Oubliez les accents dans le langage Ada.
 ]
 
@@ -20,7 +20,7 @@ Ce TP vise à aborder la conversion des algorithmes en Ada.
 
 Avant de rentrer dans le vif de la programmation Ada, mettre en oeuvre un programme minimal dans le langage pour cerner les différentes étapes à suivre est un passage obligé.
 
-+ Ouvrir un éditeur de texte (pas un traitement de texte) tels que Notepad++ et créer un nouveau fichier.
++ Ouvrez un éditeur de texte (pas un traitement de texte) tels que Notepad++ et créer un nouveau fichier.
 + Saisir le code ci-dessous dans votre fichier.
 
 
@@ -38,7 +38,7 @@ Avant de rentrer dans le vif de la programmation Ada, mettre en oeuvre un progra
   Sur windows, pour changer de disque dur, il suffit d’utiliser la commande dans la console "_nom du disque_:" . Voici un exemple : "h:" et valider.
 ]
 
-8. Exécuter la commande :
+8. Exécutez la commande :
 
 ```bash
       gnat make hello.adb
@@ -46,8 +46,8 @@ Avant de rentrer dans le vif de la programmation Ada, mettre en oeuvre un progra
 
 9. S’il y a des erreurs, vérifier le contenu de votre fichier et reprenez à 2.
 + Lorsqu’aucune erreur n’est signalée, observez le contenu du répertoire contenant “hello.adb”. Que constatez-vous ?
-+ Exécuter le programme généré en tapant son nom et valider. Si tout fonctionne vous devriez obtenir un joli message sur la console.
-+ Modifier le code du fichier “hello.adb” de façon à ce que le message obtenu affiche, sur une deuxième ligne de la console, vos nom et prénom. Reprendre la commande vue à la question 8 puis exécuter le programme.
++ Exécutez le programme généré en tapant son nom et valider. Si tout fonctionne vous devriez obtenir un joli message sur la console.
++ Modifiez le code du fichier “hello.adb” de façon à ce que le message obtenu affiche, sur une deuxième ligne de la console, vos nom et prénom. Reprendre la commande vue à la question 8 puis exécuter le programme.
 
 == Exercice 2
 
@@ -88,11 +88,11 @@ Au baccalauréat, la mention associée à une note sur 20 est
 - "passable" pour les notes comprises entre 10 inclus et 12 exclu et 
 - "insuffisant" pour les notes strictement inférieures à 10.
 
-1.	Écrire un programme en Ada permettant la saisie d’une note. 
+1.	Écrivez un programme en Ada permettant la saisie d’une note. 
 
 #pagebreak()
 
-2. Compléter le programme précèdent pour afficher la mention correspondante à la note saisie par l’utilisateur. 
+2. Complétez le programme précèdent pour afficher la mention correspondante à la note saisie par l’utilisateur. 
 Vous devez utiliser *seulement* la structure de sélection :
 
 #figure(
