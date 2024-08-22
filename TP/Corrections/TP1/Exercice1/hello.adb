@@ -9,6 +9,8 @@ begin
 
   -- print the string "Hello" on the console
   put("Hello");
+  -- print the string "Franck Silvestre" on the console
+  put(" Franck Silvestre");
 
 -- end of the main program
 end hello;
