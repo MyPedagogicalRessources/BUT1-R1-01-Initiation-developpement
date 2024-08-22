@@ -69,7 +69,7 @@ Dans ce deuxième exercice, nous allons nous concentrer sur la traduction de la 
 + *sinon*
   + #comment[Appliquer le tarif avec réduction de 10€]
   + Stocker dans le prix total le résultat de l’opération le nombre de calendriers $-$ 10€ ;
-  + Ajouter le forfait de 3 e au calcul précédent ;
+  + Ajouter le forfait de 3€ au calcul précédent ;
 + *fin si*
 + #comment[Mise à jour du prix]
 + Ajouter 4€ de frais de transport ;
