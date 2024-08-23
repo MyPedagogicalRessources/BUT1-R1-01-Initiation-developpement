@@ -47,7 +47,12 @@ Avant de rentrer dans le vif de la programmation Ada, mettre en oeuvre un progra
 9. S’il y a des erreurs, vérifier le contenu de votre fichier et reprenez à 2.
 + Lorsqu’aucune erreur n’est signalée, observez le contenu du répertoire contenant “hello.adb”. Que constatez-vous ?
 + Exécutez le programme généré en tapant son nom et valider. Si tout fonctionne vous devriez obtenir un joli message sur la console.
-+ Modifiez le code du fichier “hello.adb” de façon à ce que le message obtenu affiche, sur une deuxième ligne de la console, vos nom et prénom. Reprendre la commande vue à la question 8 puis exécuter le programme.
+
+#fix[1.1.11 programme hello]
+
+12. Modifiez le code du fichier “hello.adb” de façon à ce que le message obtenu affiche, sur une deuxième ligne de la console, vos nom et prénom. Reprendre la commande vue à la question 8 puis exécuter le programme.
+
+#fix[1.1.12 programme hello étendu]
 
 == Exercice 2
 
@@ -79,6 +84,8 @@ Dans ce deuxième exercice, nous allons nous concentrer sur la traduction de la 
 
 2. Compilez et exécutez le programme obtenu.
 
+#fix[1.2 calcul de tarifs]
+
 == Exercice 3
 
 Au baccalauréat, la mention associée à une note sur 20 est
@@ -90,7 +97,7 @@ Au baccalauréat, la mention associée à une note sur 20 est
 
 1.	Écrivez un programme en Ada permettant la saisie d’une note. 
 
-#pagebreak()
+#fix[1.3.1 saise d'une note]
 
 2. Complétez le programme précèdent pour afficher la mention correspondante à la note saisie par l’utilisateur. 
 Vous devez utiliser *seulement* la structure de sélection :
@@ -98,5 +105,7 @@ Vous devez utiliser *seulement* la structure de sélection :
 #figure(
   image("figures/Fig3_TP1.png", width: 40mm)
 )
+
+#fix[1.3.2 affichage de la mention]
 
 3. Pour s'assurer du bon fonctionnement, tester le programme pour différentes valeurs de la note saisie. Quels sont les différents cas à considérer ?

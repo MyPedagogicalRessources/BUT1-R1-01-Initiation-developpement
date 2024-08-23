@@ -24,3 +24,13 @@
   set text(green)
   [_ #prefix #body _]
 }
+
+#let fix(body, fill: rgb("#DFEED7"), title: "fix") = {
+  rect(
+    fill: fill,
+    inset: 8pt,
+    radius: 4pt,
+    stroke: luma(200),
+    [#title #body],
+  )
+}
