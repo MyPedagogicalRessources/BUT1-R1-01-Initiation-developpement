@@ -82,7 +82,7 @@ Nous proposons maintenant d’utiliser le traceur afin de tracer une croix centr
 
 Même si l'écriture directe du programme est triviale, il est préférable d'écrire au préalable un algorithme. On peut imaginer pour le 1er niveau d'affinage :
 
-#pseudocode-list(booktabs:true, title: smallcaps[Algorithme 1 : Calcul prix de location])[
+#pseudocode-list(booktabs:true, title: smallcaps[Algorithme 1 : Tracé croix v1])[
 + orienter le stylet vers le Nord ;
 + aller au centre, stylet levé ;
 + tracer la branche Nord ;
@@ -94,9 +94,85 @@ Même si l'écriture directe du programme est triviale, il est préférable d'é
 + tracer la branche Ouest ;
 + revenir au centre, stylet levé ;
 ]
+
+Cet algorithme met en évidence quatre fois la séquence des deux actions :
+- tracer une branche (alternativement Nord, Est, Sud et Ouest),
+- revenir au centre, stylet levé.
+On peut donc écrire une répétition et remplacer les actions de tracé des 4
+branches par une seule action générique tracer une branche. Il vient alors :
+
+#pseudocode-list(booktabs:true, title: smallcaps[Algorithme 2 : Tracé croix v2])[
++ orienter le stylet vers le Nord ;
++ aller au centre, stylet levé ;
++ *tant que* il reste une branche à tracer *faire*
+  + tracer une branche de la croix;
+  + passer à la branche suivante ;
++ fin *tant que* ;
+]
+
+Au 2ème niveau d'affinage, l'action complexe tracer une branche s'exprime aussi par une répétition :
+
+#pseudocode-list(booktabs:true)[
++ #comment[tracer une branche de la croix]
++ baisser le stylet ;
++ *tant que* il reste une unité à tracer *faire*
+  + tracer une unité ;
++ fin *tant que* ;
++ lever le stylet ;
+]
+
+
+On affine l’action complexe passer à la branche suivante par l’écriture :
+
+#pseudocode-list(booktabs:true)[
++ #comment[passer à la branche suivante]
++ revenir au centre, stylet levé ;
++ pivoter à droite ;
+]
+
+On en déduit l'algorithme détaillé de tracé de la croix :
+
+#pseudocode-list(booktabs:true, title: smallcaps[Algorithme 3 : Tracé croix v3])[
++ orienter le stylet vers le Nord ;
++ aller au centre, stylet levé ;
++ *tant que* il reste une branche à tracer *faire*
+  + #comment[tracer une branche de la croix]
+  + baisser le stylet ;
+  + *tant que* il reste une unité à tracer *faire*
+    + deplacer le stylet ;
+  + fin *tant que* ;
+  + lever le stylet ;
+  + #comment[passer à la branche suivante]
+  + revenir au centre, stylet levé ;
+  + pivoter à droite ;
++ fin *tant que* ;
+]
 ]
 
 2. Traduire cet algorithme avec les actions élémentaires du traceur.
 
+#correction(displayCorrection: isCorrection)[
+
+#pseudocode-list(booktabs:true, title: smallcaps[Programme de tracé de la croix])[
++ orienterNord;
++ centrerStylet;
++ initialiserC1 ;
++ *tant que not* ComparerValeursC1Et4 *faire*
+  + #comment[tracer une branche de la croix]
+  + baisserStylet;
+  + initialiserC2 ;
+  + *tant que not* ComparerValeursC2Et30 *faire*
+    + deplacerStylet;
+    + ajouterUnC2 ;
+  + fin *tant que* ;
+  +leverStylet;
+  + #comment[passer à la branche suivante]
+  + centrerStylet;
+  + pivoterDroite;
+  + ajouterUnC1 ;
++ fin *tant que* ;
+]
+
+]
 
 ]

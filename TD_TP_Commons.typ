@@ -10,8 +10,11 @@
 
 #let correction(body, displayCorrection:true) = {
   if (displayCorrection) {
-    rect(
+    block(
     fill: luma(250),
+    inset: 8pt,
+    radius: 4pt,
+    stroke: luma(200),
     [
       *Correction* 
       #body
