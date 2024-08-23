@@ -3,7 +3,7 @@
 
 #set heading(numbering: none)
 
-= R101- TP1 - Programmation en Ada
+= R1.01 - TP1 - Programmation en Ada
 
 #remarque(title: [*Avant de commencer chaque séance TP*])[
   + Ouvrez un terminal et créez un dossier dans votre espace (disque H).
