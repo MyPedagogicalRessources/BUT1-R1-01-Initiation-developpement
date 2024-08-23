@@ -60,5 +60,43 @@ Voici quelques exemples pour manipuler les compteurs :
 - _comparerValeurs$C_1$Et$4$_ → La valeur du compteur $C_1$ st comparée avec 4. Le résultat peut être vrai ou faux.
 - _comparerValeurs$C_1$Et$C_2$_ → La valeur du compteur $C_1$ st comparée avec la valeur du compteur $C_2$. Le résultat peut être vrai ou faux.
 
+== Exercice 1
+
+Nous proposons maintenant d’utiliser le traceur afin de tracer une croix centrée à l'origine de la surface de travail. Chaque branche de cette croix aura une longueur de 30 unités.
+
+#figure(
+  image("figures/TD2/TD3_Fig1.png", width: 35mm)
+)
+
++ Ecrire un algorithme en langage naturel permettant de tracer une telle croix en tenant compte des états initial et final suivants :
+
+  - *Etat initial (pré-condition):*
+
+    On admettra que la direction initiale de tracé est inconnue.
+
+  - *Etat final (post-condition):*
+
+    Le stylet devra être situé à l’origine, en position levée
+
+#correction(displayCorrection: isCorrection)[
+
+Même si l'écriture directe du programme est triviale, il est préférable d'écrire au préalable un algorithme. On peut imaginer pour le 1er niveau d'affinage :
+
+#pseudocode-list(booktabs:true, title: smallcaps[Algorithme 1 : Calcul prix de location])[
++ orienter le stylet vers le Nord ;
++ aller au centre, stylet levé ;
++ tracer la branche Nord ;
++ revenir au centre, stylet levé ;
++ tracer la branche Est ;
++ revenir au centre, stylet levé ;
++ tracer la branche Sud ;
++ revenir au centre, stylet levé ;
++ tracer la branche Ouest ;
++ revenir au centre, stylet levé ;
+]
+]
+
+2. Traduire cet algorithme avec les actions élémentaires du traceur.
+
 
 ]
