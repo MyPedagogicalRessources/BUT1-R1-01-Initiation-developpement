@@ -1,8 +1,6 @@
 #import "@preview/lovelace:0.3.0": *
 #import "../TD_TP_Commons.typ": *
 
-#set heading(numbering: none)
-
 = R1.01 - TP1 - Programmation en Ada
 
 #remarque(title: [*Avant de commencer chaque séance TP*])[

@@ -13,4 +13,7 @@
   listing-index: (enabled: false)
 )
 
+#set heading(numbering: "1.1.")
+
+#include "TP0-Introduction.typ"
 #include "TP1-Prog-en-Ada.typ"

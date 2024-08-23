@@ -3,7 +3,6 @@
 #import "@preview/lovelace:0.3.0": *
 #import "../TD_TP_Commons.typ": *
 
-#set heading(numbering: none)
 
 = R101- TD1 - Les structures de contrôle
 

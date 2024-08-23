@@ -1,5 +1,6 @@
 #import "../TD_TP_Commons.typ": *
 
+
 == R1.01 - Introduction
 
 === Avant de commencer chaque séance TP

@@ -13,5 +13,7 @@
   listing-index: (enabled: false)
 )
 
+#set heading(numbering: "1.1.")
+
 #import "TD1-Structures-controle.typ":*
 #td1(isCorrection: true)
