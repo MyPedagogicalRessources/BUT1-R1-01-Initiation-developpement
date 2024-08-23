@@ -17,3 +17,6 @@
 
 #import "TD1-Structures-controle.typ":*
 #td1(isCorrection: true)
+
+#import "TD2-Trace-dessins.typ":*
+#td2(isCorrection: true)
